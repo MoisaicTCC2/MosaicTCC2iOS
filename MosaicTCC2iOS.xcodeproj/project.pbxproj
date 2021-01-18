@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		024ACE6425B5253A009F30B2 /* DICOMMetadataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024ACE6325B5253A009F30B2 /* DICOMMetadataViewController.swift */; };
 		02A93E1725B4C8B200CADABF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A93E1625B4C8B200CADABF /* AppDelegate.swift */; };
 		02A93E1925B4C8B200CADABF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A93E1825B4C8B200CADABF /* SceneDelegate.swift */; };
 		02A93E1B25B4C8B200CADABF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A93E1A25B4C8B200CADABF /* ViewController.swift */; };
@@ -20,6 +21,9 @@
 		02A93E5325B517A900CADABF /* DICOMFilesCreatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A93E5225B517A900CADABF /* DICOMFilesCreatedViewController.swift */; };
 		02A93E5625B51A4900CADABF /* DICOMFilesCreated.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02A93E5425B51A4900CADABF /* DICOMFilesCreated.storyboard */; };
 		02A93E5825B51D9500CADABF /* DICOMMetadata.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02A93E5725B51D9500CADABF /* DICOMMetadata.storyboard */; };
+		3BB7E9D040306101282B314C /* Pods_MosaicTCC2iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2C09BF45EA78E89C3565D88 /* Pods_MosaicTCC2iOS.framework */; };
+		44476B2B9A727542EE922934 /* Pods_MosaicTCC2iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23EED7D1C3DF4331E84E67B8 /* Pods_MosaicTCC2iOSTests.framework */; };
+		5C8C5EBAA1249DE27B9A540F /* Pods_MosaicTCC2iOS_MosaicTCC2iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE9BA29EB13D1FBC9D9E77A0 /* Pods_MosaicTCC2iOS_MosaicTCC2iOSUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		024ACE6325B5253A009F30B2 /* DICOMMetadataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DICOMMetadataViewController.swift; sourceTree = "<group>"; };
 		02A93E1325B4C8B200CADABF /* MosaicTCC2iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MosaicTCC2iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02A93E1625B4C8B200CADABF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02A93E1825B4C8B200CADABF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +64,15 @@
 		02A93E5225B517A900CADABF /* DICOMFilesCreatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DICOMFilesCreatedViewController.swift; sourceTree = "<group>"; };
 		02A93E5525B51A4900CADABF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MosaicTCC2iOS/Scenes/UploadImageFragment/Base.lproj/DICOMFilesCreated.storyboard; sourceTree = "<group>"; };
 		02A93E5725B51D9500CADABF /* DICOMMetadata.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DICOMMetadata.storyboard; sourceTree = "<group>"; };
+		23EED7D1C3DF4331E84E67B8 /* Pods_MosaicTCC2iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MosaicTCC2iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38E378CAB51D31E6DD72BC2E /* Pods-MosaicTCC2iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MosaicTCC2iOS.debug.xcconfig"; path = "Target Support Files/Pods-MosaicTCC2iOS/Pods-MosaicTCC2iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		83A7B3BC2A710663E6B9A05D /* Pods-MosaicTCC2iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MosaicTCC2iOSTests.release.xcconfig"; path = "Target Support Files/Pods-MosaicTCC2iOSTests/Pods-MosaicTCC2iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		A634C8ADA9B4B8B88B78B73B /* Pods-MosaicTCC2iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MosaicTCC2iOS.release.xcconfig"; path = "Target Support Files/Pods-MosaicTCC2iOS/Pods-MosaicTCC2iOS.release.xcconfig"; sourceTree = "<group>"; };
+		C2C09BF45EA78E89C3565D88 /* Pods_MosaicTCC2iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MosaicTCC2iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C67B2665DECA52184FE1C2BD /* Pods-MosaicTCC2iOS-MosaicTCC2iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MosaicTCC2iOS-MosaicTCC2iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-MosaicTCC2iOS-MosaicTCC2iOSUITests/Pods-MosaicTCC2iOS-MosaicTCC2iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DD86F557EDC1431C4CFB0ED5 /* Pods-MosaicTCC2iOS-MosaicTCC2iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MosaicTCC2iOS-MosaicTCC2iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-MosaicTCC2iOS-MosaicTCC2iOSUITests/Pods-MosaicTCC2iOS-MosaicTCC2iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EE9BA29EB13D1FBC9D9E77A0 /* Pods_MosaicTCC2iOS_MosaicTCC2iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MosaicTCC2iOS_MosaicTCC2iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFDDE5F3F39D239FF9CA3F66 /* Pods-MosaicTCC2iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MosaicTCC2iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-MosaicTCC2iOSTests/Pods-MosaicTCC2iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BB7E9D040306101282B314C /* Pods_MosaicTCC2iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44476B2B9A727542EE922934 /* Pods_MosaicTCC2iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C8C5EBAA1249DE27B9A540F /* Pods_MosaicTCC2iOS_MosaicTCC2iOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +110,8 @@
 				02A93E2C25B4C8B600CADABF /* MosaicTCC2iOSTests */,
 				02A93E3725B4C8B600CADABF /* MosaicTCC2iOSUITests */,
 				02A93E1425B4C8B200CADABF /* Products */,
+				554384E72CED2062737EDEED /* Pods */,
+				69BB057D076DF8C70D04D449 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -162,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				02A93E5725B51D9500CADABF /* DICOMMetadata.storyboard */,
+				024ACE6325B5253A009F30B2 /* DICOMMetadataViewController.swift */,
 			);
 			path = DICOMData;
 			sourceTree = "<group>";
@@ -175,6 +195,29 @@
 			path = DICOMFiles;
 			sourceTree = "<group>";
 		};
+		554384E72CED2062737EDEED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				38E378CAB51D31E6DD72BC2E /* Pods-MosaicTCC2iOS.debug.xcconfig */,
+				A634C8ADA9B4B8B88B78B73B /* Pods-MosaicTCC2iOS.release.xcconfig */,
+				C67B2665DECA52184FE1C2BD /* Pods-MosaicTCC2iOS-MosaicTCC2iOSUITests.debug.xcconfig */,
+				DD86F557EDC1431C4CFB0ED5 /* Pods-MosaicTCC2iOS-MosaicTCC2iOSUITests.release.xcconfig */,
+				FFDDE5F3F39D239FF9CA3F66 /* Pods-MosaicTCC2iOSTests.debug.xcconfig */,
+				83A7B3BC2A710663E6B9A05D /* Pods-MosaicTCC2iOSTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		69BB057D076DF8C70D04D449 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2C09BF45EA78E89C3565D88 /* Pods_MosaicTCC2iOS.framework */,
+				EE9BA29EB13D1FBC9D9E77A0 /* Pods_MosaicTCC2iOS_MosaicTCC2iOSUITests.framework */,
+				23EED7D1C3DF4331E84E67B8 /* Pods_MosaicTCC2iOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -182,9 +225,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02A93E3D25B4C8B600CADABF /* Build configuration list for PBXNativeTarget "MosaicTCC2iOS" */;
 			buildPhases = (
+				5753F7572DC07A165BF60829 /* [CP] Check Pods Manifest.lock */,
 				02A93E0F25B4C8B200CADABF /* Sources */,
 				02A93E1025B4C8B200CADABF /* Frameworks */,
 				02A93E1125B4C8B200CADABF /* Resources */,
+				2C2FC5449DF5E20EDD676411 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -199,6 +244,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02A93E4025B4C8B600CADABF /* Build configuration list for PBXNativeTarget "MosaicTCC2iOSTests" */;
 			buildPhases = (
+				2A9972CCA3A4BE589DB5897E /* [CP] Check Pods Manifest.lock */,
 				02A93E2525B4C8B600CADABF /* Sources */,
 				02A93E2625B4C8B600CADABF /* Frameworks */,
 				02A93E2725B4C8B600CADABF /* Resources */,
@@ -217,9 +263,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02A93E4325B4C8B600CADABF /* Build configuration list for PBXNativeTarget "MosaicTCC2iOSUITests" */;
 			buildPhases = (
+				38D879A71C6BDDFBA39FBBFF /* [CP] Check Pods Manifest.lock */,
 				02A93E3025B4C8B600CADABF /* Sources */,
 				02A93E3125B4C8B600CADABF /* Frameworks */,
 				02A93E3225B4C8B600CADABF /* Resources */,
+				F41354022E8A6E487C1F0881 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -303,6 +351,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2A9972CCA3A4BE589DB5897E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MosaicTCC2iOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C2FC5449DF5E20EDD676411 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MosaicTCC2iOS/Pods-MosaicTCC2iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MosaicTCC2iOS/Pods-MosaicTCC2iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MosaicTCC2iOS/Pods-MosaicTCC2iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38D879A71C6BDDFBA39FBBFF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MosaicTCC2iOS-MosaicTCC2iOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5753F7572DC07A165BF60829 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MosaicTCC2iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F41354022E8A6E487C1F0881 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MosaicTCC2iOS-MosaicTCC2iOSUITests/Pods-MosaicTCC2iOS-MosaicTCC2iOSUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MosaicTCC2iOS-MosaicTCC2iOSUITests/Pods-MosaicTCC2iOS-MosaicTCC2iOSUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MosaicTCC2iOS-MosaicTCC2iOSUITests/Pods-MosaicTCC2iOS-MosaicTCC2iOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		02A93E0F25B4C8B200CADABF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -311,6 +462,7 @@
 				02A93E5325B517A900CADABF /* DICOMFilesCreatedViewController.swift in Sources */,
 				02A93E1B25B4C8B200CADABF /* ViewController.swift in Sources */,
 				02A93E1725B4C8B200CADABF /* AppDelegate.swift in Sources */,
+				024ACE6425B5253A009F30B2 /* DICOMMetadataViewController.swift in Sources */,
 				02A93E1925B4C8B200CADABF /* SceneDelegate.swift in Sources */,
 				02A93E4D25B4F54800CADABF /* ImagePicker.swift in Sources */,
 				02A93E4F25B4FBD300CADABF /* ImageFragmentCollectionViewCell.swift in Sources */,
@@ -492,6 +644,7 @@
 		};
 		02A93E3E25B4C8B600CADABF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38E378CAB51D31E6DD72BC2E /* Pods-MosaicTCC2iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -510,6 +663,7 @@
 		};
 		02A93E3F25B4C8B600CADABF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A634C8ADA9B4B8B88B78B73B /* Pods-MosaicTCC2iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +682,7 @@
 		};
 		02A93E4125B4C8B600CADABF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFDDE5F3F39D239FF9CA3F66 /* Pods-MosaicTCC2iOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -550,6 +705,7 @@
 		};
 		02A93E4225B4C8B600CADABF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83A7B3BC2A710663E6B9A05D /* Pods-MosaicTCC2iOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -572,6 +728,7 @@
 		};
 		02A93E4425B4C8B600CADABF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C67B2665DECA52184FE1C2BD /* Pods-MosaicTCC2iOS-MosaicTCC2iOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -592,6 +749,7 @@
 		};
 		02A93E4525B4C8B600CADABF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD86F557EDC1431C4CFB0ED5 /* Pods-MosaicTCC2iOS-MosaicTCC2iOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

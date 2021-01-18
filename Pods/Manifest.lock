@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (5.4.1)
+  - Eureka (5.3.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - Eureka
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Eureka
+
+SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  Eureka: 1c2b8b5892bfb0e972d0fe05f8c09fd89f8625ec
+
+PODFILE CHECKSUM: 39b962edce20ef6060d32dffc2ae479e20487411
+
+COCOAPODS: 1.10.0

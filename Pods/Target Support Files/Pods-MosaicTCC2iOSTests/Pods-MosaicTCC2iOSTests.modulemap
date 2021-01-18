@@ -1,0 +1,6 @@
+framework module Pods_MosaicTCC2iOSTests {
+  umbrella header "Pods-MosaicTCC2iOSTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
