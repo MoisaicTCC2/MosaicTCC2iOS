@@ -15,6 +15,11 @@
 		02A93E2325B4C8B500CADABF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02A93E2125B4C8B500CADABF /* LaunchScreen.storyboard */; };
 		02A93E2E25B4C8B600CADABF /* MosaicTCC2iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A93E2D25B4C8B600CADABF /* MosaicTCC2iOSTests.swift */; };
 		02A93E3925B4C8B600CADABF /* MosaicTCC2iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A93E3825B4C8B600CADABF /* MosaicTCC2iOSUITests.swift */; };
+		02A93E4D25B4F54800CADABF /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A93E4C25B4F54800CADABF /* ImagePicker.swift */; };
+		02A93E4F25B4FBD300CADABF /* ImageFragmentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A93E4E25B4FBD300CADABF /* ImageFragmentCollectionViewCell.swift */; };
+		02A93E5325B517A900CADABF /* DICOMFilesCreatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A93E5225B517A900CADABF /* DICOMFilesCreatedViewController.swift */; };
+		02A93E5625B51A4900CADABF /* DICOMFilesCreated.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02A93E5425B51A4900CADABF /* DICOMFilesCreated.storyboard */; };
+		02A93E5825B51D9500CADABF /* DICOMMetadata.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02A93E5725B51D9500CADABF /* DICOMMetadata.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		02A93E3425B4C8B600CADABF /* MosaicTCC2iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MosaicTCC2iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02A93E3825B4C8B600CADABF /* MosaicTCC2iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosaicTCC2iOSUITests.swift; sourceTree = "<group>"; };
 		02A93E3A25B4C8B600CADABF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02A93E4C25B4F54800CADABF /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		02A93E4E25B4FBD300CADABF /* ImageFragmentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFragmentCollectionViewCell.swift; sourceTree = "<group>"; };
+		02A93E5225B517A900CADABF /* DICOMFilesCreatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DICOMFilesCreatedViewController.swift; sourceTree = "<group>"; };
+		02A93E5525B51A4900CADABF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MosaicTCC2iOS/Scenes/UploadImageFragment/Base.lproj/DICOMFilesCreated.storyboard; sourceTree = "<group>"; };
+		02A93E5725B51D9500CADABF /* DICOMMetadata.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DICOMMetadata.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +109,13 @@
 		02A93E1525B4C8B200CADABF /* MosaicTCC2iOS */ = {
 			isa = PBXGroup;
 			children = (
+				02A93E4625B4CA7000CADABF /* Scenes */,
 				02A93E1625B4C8B200CADABF /* AppDelegate.swift */,
 				02A93E1825B4C8B200CADABF /* SceneDelegate.swift */,
-				02A93E1A25B4C8B200CADABF /* ViewController.swift */,
-				02A93E1C25B4C8B200CADABF /* Main.storyboard */,
 				02A93E1F25B4C8B500CADABF /* Assets.xcassets */,
 				02A93E2125B4C8B500CADABF /* LaunchScreen.storyboard */,
 				02A93E2425B4C8B500CADABF /* Info.plist */,
+				02A93E4C25B4F54800CADABF /* ImagePicker.swift */,
 			);
 			path = MosaicTCC2iOS;
 			sourceTree = "<group>";
@@ -126,6 +136,43 @@
 				02A93E3A25B4C8B600CADABF /* Info.plist */,
 			);
 			path = MosaicTCC2iOSUITests;
+			sourceTree = "<group>";
+		};
+		02A93E4625B4CA7000CADABF /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				02A93E4925B4CAD400CADABF /* DICOMFiles */,
+				02A93E4825B4CAB800CADABF /* DICOMData */,
+				02A93E4725B4CA8000CADABF /* UploadImageFragment */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		02A93E4725B4CA8000CADABF /* UploadImageFragment */ = {
+			isa = PBXGroup;
+			children = (
+				02A93E1A25B4C8B200CADABF /* ViewController.swift */,
+				02A93E1C25B4C8B200CADABF /* Main.storyboard */,
+				02A93E4E25B4FBD300CADABF /* ImageFragmentCollectionViewCell.swift */,
+			);
+			path = UploadImageFragment;
+			sourceTree = "<group>";
+		};
+		02A93E4825B4CAB800CADABF /* DICOMData */ = {
+			isa = PBXGroup;
+			children = (
+				02A93E5725B51D9500CADABF /* DICOMMetadata.storyboard */,
+			);
+			path = DICOMData;
+			sourceTree = "<group>";
+		};
+		02A93E4925B4CAD400CADABF /* DICOMFiles */ = {
+			isa = PBXGroup;
+			children = (
+				02A93E5225B517A900CADABF /* DICOMFilesCreatedViewController.swift */,
+				02A93E5425B51A4900CADABF /* DICOMFilesCreated.storyboard */,
+			);
+			path = DICOMFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +281,8 @@
 			files = (
 				02A93E2325B4C8B500CADABF /* LaunchScreen.storyboard in Resources */,
 				02A93E2025B4C8B500CADABF /* Assets.xcassets in Resources */,
+				02A93E5825B51D9500CADABF /* DICOMMetadata.storyboard in Resources */,
+				02A93E5625B51A4900CADABF /* DICOMFilesCreated.storyboard in Resources */,
 				02A93E1E25B4C8B200CADABF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,9 +308,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02A93E5325B517A900CADABF /* DICOMFilesCreatedViewController.swift in Sources */,
 				02A93E1B25B4C8B200CADABF /* ViewController.swift in Sources */,
 				02A93E1725B4C8B200CADABF /* AppDelegate.swift in Sources */,
 				02A93E1925B4C8B200CADABF /* SceneDelegate.swift in Sources */,
+				02A93E4D25B4F54800CADABF /* ImagePicker.swift in Sources */,
+				02A93E4F25B4FBD300CADABF /* ImageFragmentCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +363,14 @@
 				02A93E2225B4C8B500CADABF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		02A93E5425B51A4900CADABF /* DICOMFilesCreated.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02A93E5525B51A4900CADABF /* Base */,
+			);
+			name = DICOMFilesCreated.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

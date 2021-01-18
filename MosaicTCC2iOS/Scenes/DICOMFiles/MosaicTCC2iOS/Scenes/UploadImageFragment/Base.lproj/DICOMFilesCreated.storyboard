@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="F3C-F7-foR">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="4xT-h7-fdX">
+            <objects>
+                <viewController id="F3C-F7-foR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YJV-Y2-dON">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="iK4-70-hOA">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Ds-z8-LEc">
+                                <rect key="frame" x="0.0" y="100" width="414" height="762"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wnc-L4-lmW" firstAttribute="bottom" secondItem="0Ds-z8-LEc" secondAttribute="bottom" id="3GL-Qk-Plw"/>
+                            <constraint firstItem="iK4-70-hOA" firstAttribute="leading" secondItem="wnc-L4-lmW" secondAttribute="leading" id="CVp-xy-Xul"/>
+                            <constraint firstItem="0Ds-z8-LEc" firstAttribute="top" secondItem="iK4-70-hOA" secondAttribute="bottom" id="Gcg-of-9h0"/>
+                            <constraint firstItem="wnc-L4-lmW" firstAttribute="trailing" secondItem="0Ds-z8-LEc" secondAttribute="trailing" id="IMU-7U-voR"/>
+                            <constraint firstItem="0Ds-z8-LEc" firstAttribute="leading" secondItem="wnc-L4-lmW" secondAttribute="leading" id="ciD-zG-HVQ"/>
+                            <constraint firstItem="iK4-70-hOA" firstAttribute="trailing" secondItem="wnc-L4-lmW" secondAttribute="trailing" id="lIu-9D-3ix"/>
+                            <constraint firstItem="iK4-70-hOA" firstAttribute="top" secondItem="wnc-L4-lmW" secondAttribute="top" id="xvx-d8-VYZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wnc-L4-lmW"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="folder" catalog="system" selectedImage="folder" id="Dcj-jH-UUm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B2y-Mr-1fj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="583" y="808"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="folder" catalog="system" width="128" height="95"/>
+    </resources>
+</document>
