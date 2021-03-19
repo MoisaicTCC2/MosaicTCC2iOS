@@ -29,6 +29,7 @@ class DataProgressViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.setNavigationBarHidden(true, animated: true)
+        self.tabBarController?.tabBar.isHidden = true
         guard let images = images, let dicomData = dicomData else { return }
         viewModel.sendData(images: images, informations: dicomData)
         dataProgressView.setProgress(0.0, animated: true)
