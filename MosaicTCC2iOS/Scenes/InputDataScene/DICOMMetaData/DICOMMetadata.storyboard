@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6jH-Fz-lKS">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Metadata View Controller-->
+        <scene sceneID="DMi-r5-gkg">
+            <objects>
+                <viewController id="6jH-Fz-lKS" customClass="DICOMMetadataViewController" customModule="MosaicTCC2iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lNn-U2-LXs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="1wo-WF-2gf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lIk-fX-DwZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fA1-2h-td3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2970" y="100"/>
+        </scene>
+        <!--Data Progress View Controller-->
+        <scene sceneID="on7-6p-HUJ">
+            <objects>
+                <viewController storyboardIdentifier="DataProgressViewController" id="uwS-qH-SFo" customClass="DataProgressViewController" customModule="MosaicTCC2iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FGQ-wq-3Dp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="aG7-Ec-tzo">
+                                <rect key="frame" x="16" y="436" width="382" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="lh0-H9-N1S"/>
+                                </constraints>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enviando dados..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s5y-Lq-Okk">
+                                <rect key="frame" x="16" y="476" width="382" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ICJ-Cv-nhX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ICJ-Cv-nhX" firstAttribute="trailing" secondItem="aG7-Ec-tzo" secondAttribute="trailing" constant="16" id="2ld-CH-I0c"/>
+                            <constraint firstItem="aG7-Ec-tzo" firstAttribute="leading" secondItem="ICJ-Cv-nhX" secondAttribute="leading" constant="16" id="Mzn-CM-vn4"/>
+                            <constraint firstItem="s5y-Lq-Okk" firstAttribute="leading" secondItem="ICJ-Cv-nhX" secondAttribute="leading" constant="16" id="big-25-7UK"/>
+                            <constraint firstItem="s5y-Lq-Okk" firstAttribute="top" secondItem="aG7-Ec-tzo" secondAttribute="bottom" constant="16" id="dH2-ou-jFo"/>
+                            <constraint firstItem="aG7-Ec-tzo" firstAttribute="centerY" secondItem="FGQ-wq-3Dp" secondAttribute="centerY" id="slZ-WT-g67"/>
+                            <constraint firstItem="ICJ-Cv-nhX" firstAttribute="trailing" secondItem="s5y-Lq-Okk" secondAttribute="trailing" constant="16" id="yRz-Ow-ZYa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataProgressView" destination="aG7-Ec-tzo" id="g2s-d9-khl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rmc-GX-yVC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4056" y="97"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

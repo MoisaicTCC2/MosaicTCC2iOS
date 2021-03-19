@@ -8,6 +8,7 @@ target 'MosaicTCC2iOS' do
   # Pods for MosaicTCC2iOS
   pod 'Eureka'
   pod 'Alamofire', '~> 5.2'
+  pod 'lottie-ios'
 
   target 'MosaicTCC2iOSTests' do
     inherit! :search_paths
