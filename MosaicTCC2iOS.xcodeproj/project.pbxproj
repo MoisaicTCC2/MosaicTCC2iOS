@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02352B69260E833300F50C99 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02352B68260E832F00F50C99 /* Signup.storyboard */; };
+		02352B6E2610305E00F50C99 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02352B6D2610305D00F50C99 /* Login.storyboard */; };
+		02352B732610327600F50C99 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02352B722610327500F50C99 /* LoginViewController.swift */; };
+		02352B782610329100F50C99 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02352B772610329100F50C99 /* SignupViewController.swift */; };
+		02352B7D2610331200F50C99 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02352B7C2610331200F50C99 /* LoginViewModel.swift */; };
+		02352B82261034D900F50C99 /* LoginRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02352B81261034D900F50C99 /* LoginRequestModel.swift */; };
+		02352B872610397500F50C99 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02352B862610397500F50C99 /* SignupViewModel.swift */; };
+		02352B8C261039BF00F50C99 /* SignupRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02352B8B261039BE00F50C99 /* SignupRequestModel.swift */; };
 		024ACE6425B5253A009F30B2 /* DICOMMetadataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024ACE6325B5253A009F30B2 /* DICOMMetadataViewController.swift */; };
 		027EE47F25F8769300BAF8F2 /* DataProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027EE47E25F8769300BAF8F2 /* DataProgressViewController.swift */; };
 		027EE48F25FC5F8B00BAF8F2 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027EE48E25FC5F8B00BAF8F2 /* UIImage+Extension.swift */; };
@@ -35,6 +43,10 @@
 		02A93E5825B51D9500CADABF /* DICOMMetadata.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02A93E5725B51D9500CADABF /* DICOMMetadata.storyboard */; };
 		02ABA5DF25E3774600331248 /* SCImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ABA5DE25E3774600331248 /* SCImage.swift */; };
 		02ABA5EF25E3991500331248 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02ABA5EE25E3991500331248 /* APIService.swift */; };
+		02C2641A2606B34B000183BA /* StudiesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C264192606B34B000183BA /* StudiesListViewModel.swift */; };
+		02C2641F260709A2000183BA /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C2641E260709A2000183BA /* UIImageView+Extensions.swift */; };
+		02C2642426071F19000183BA /* StudiesDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02C2642326071F19000183BA /* StudiesDetail.storyboard */; };
+		02C2642C26072424000183BA /* StudiesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C2642B26072424000183BA /* StudiesDetailViewController.swift */; };
 		3BB7E9D040306101282B314C /* Pods_MosaicTCC2iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2C09BF45EA78E89C3565D88 /* Pods_MosaicTCC2iOS.framework */; };
 		44476B2B9A727542EE922934 /* Pods_MosaicTCC2iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23EED7D1C3DF4331E84E67B8 /* Pods_MosaicTCC2iOSTests.framework */; };
 		5C8C5EBAA1249DE27B9A540F /* Pods_MosaicTCC2iOS_MosaicTCC2iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE9BA29EB13D1FBC9D9E77A0 /* Pods_MosaicTCC2iOS_MosaicTCC2iOSUITests.framework */; };
@@ -58,6 +70,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02352B68260E832F00F50C99 /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
+		02352B6D2610305D00F50C99 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		02352B722610327500F50C99 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		02352B772610329100F50C99 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		02352B7C2610331200F50C99 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		02352B81261034D900F50C99 /* LoginRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequestModel.swift; sourceTree = "<group>"; };
+		02352B862610397500F50C99 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
+		02352B8B261039BE00F50C99 /* SignupRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupRequestModel.swift; sourceTree = "<group>"; };
 		024ACE6325B5253A009F30B2 /* DICOMMetadataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DICOMMetadataViewController.swift; sourceTree = "<group>"; };
 		027EE47E25F8769300BAF8F2 /* DataProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProgressViewController.swift; sourceTree = "<group>"; };
 		027EE48E25FC5F8B00BAF8F2 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
@@ -92,6 +112,10 @@
 		02A93E5725B51D9500CADABF /* DICOMMetadata.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DICOMMetadata.storyboard; sourceTree = "<group>"; };
 		02ABA5DE25E3774600331248 /* SCImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCImage.swift; sourceTree = "<group>"; };
 		02ABA5EE25E3991500331248 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		02C264192606B34B000183BA /* StudiesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudiesListViewModel.swift; sourceTree = "<group>"; };
+		02C2641E260709A2000183BA /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		02C2642326071F19000183BA /* StudiesDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StudiesDetail.storyboard; sourceTree = "<group>"; };
+		02C2642B26072424000183BA /* StudiesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudiesDetailViewController.swift; sourceTree = "<group>"; };
 		23EED7D1C3DF4331E84E67B8 /* Pods_MosaicTCC2iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MosaicTCC2iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38E378CAB51D31E6DD72BC2E /* Pods-MosaicTCC2iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MosaicTCC2iOS.debug.xcconfig"; path = "Target Support Files/Pods-MosaicTCC2iOS/Pods-MosaicTCC2iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		83A7B3BC2A710663E6B9A05D /* Pods-MosaicTCC2iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MosaicTCC2iOSTests.release.xcconfig"; path = "Target Support Files/Pods-MosaicTCC2iOSTests/Pods-MosaicTCC2iOSTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +155,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02352B65260E82ED00F50C99 /* Authetication */ = {
+			isa = PBXGroup;
+			children = (
+				02352B67260E830100F50C99 /* Signup */,
+				02352B66260E82F900F50C99 /* Login */,
+			);
+			path = Authetication;
+			sourceTree = "<group>";
+		};
+		02352B66260E82F900F50C99 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				02352B6D2610305D00F50C99 /* Login.storyboard */,
+				02352B722610327500F50C99 /* LoginViewController.swift */,
+				02352B7C2610331200F50C99 /* LoginViewModel.swift */,
+				02352B81261034D900F50C99 /* LoginRequestModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		02352B67260E830100F50C99 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				02352B68260E832F00F50C99 /* Signup.storyboard */,
+				02352B772610329100F50C99 /* SignupViewController.swift */,
+				02352B862610397500F50C99 /* SignupViewModel.swift */,
+				02352B8B261039BE00F50C99 /* SignupRequestModel.swift */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
 		027EE48C25FC5F3900BAF8F2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +204,7 @@
 				027EE49825FC635100BAF8F2 /* String+Extensions.swift */,
 				027EE49D25FC65C200BAF8F2 /* Date+Extensions.swift */,
 				027EE4A525FDE55700BAF8F2 /* Encodable+Extensions.swift */,
+				02C2641E260709A2000183BA /* UIImageView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -157,7 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				027EE4B92604595800BAF8F2 /* StudiesList */,
-				027EE4B82604592900BAF8F2 /* SerieDetail */,
+				027EE4B82604592900BAF8F2 /* StudiesDetail */,
 				027EE4B6260458B100BAF8F2 /* models */,
 			);
 			path = Studies;
@@ -178,12 +234,14 @@
 			path = view;
 			sourceTree = "<group>";
 		};
-		027EE4B82604592900BAF8F2 /* SerieDetail */ = {
+		027EE4B82604592900BAF8F2 /* StudiesDetail */ = {
 			isa = PBXGroup;
 			children = (
 				027EE4B72604590D00BAF8F2 /* view */,
+				02C2642326071F19000183BA /* StudiesDetail.storyboard */,
+				02C2642B26072424000183BA /* StudiesDetailViewController.swift */,
 			);
-			path = SerieDetail;
+			path = StudiesDetail;
 			sourceTree = "<group>";
 		};
 		027EE4B92604595800BAF8F2 /* StudiesList */ = {
@@ -192,6 +250,7 @@
 				027EE4C5260512A300BAF8F2 /* StudiesListViewController.swift */,
 				027EE4CF2605145900BAF8F2 /* StudiesTableViewCell.xib */,
 				027EE4D42605170400BAF8F2 /* StudiesTableViewCell.swift */,
+				02C264192606B34B000183BA /* StudiesListViewModel.swift */,
 			);
 			path = StudiesList;
 			sourceTree = "<group>";
@@ -297,6 +356,7 @@
 		02A93E4625B4CA7000CADABF /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				02352B65260E82ED00F50C99 /* Authetication */,
 				027EE4AA2604423200BAF8F2 /* Studies */,
 				02A93E4925B4CAD400CADABF /* DICOMFiles */,
 				02A93E4725B4CA8000CADABF /* InputDataScene */,
@@ -461,8 +521,11 @@
 				02A93E2325B4C8B500CADABF /* LaunchScreen.storyboard in Resources */,
 				02A93E2025B4C8B500CADABF /* Assets.xcassets in Resources */,
 				02A93E5825B51D9500CADABF /* DICOMMetadata.storyboard in Resources */,
+				02C2642426071F19000183BA /* StudiesDetail.storyboard in Resources */,
 				02A93E5625B51A4900CADABF /* DICOMFilesCreated.storyboard in Resources */,
+				02352B69260E833300F50C99 /* Signup.storyboard in Resources */,
 				02A93E1E25B4C8B200CADABF /* Main.storyboard in Resources */,
+				02352B6E2610305E00F50C99 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,22 +655,31 @@
 			files = (
 				027EE48F25FC5F8B00BAF8F2 /* UIImage+Extension.swift in Sources */,
 				02A93E5325B517A900CADABF /* DICOMFilesCreatedViewController.swift in Sources */,
+				02C2641F260709A2000183BA /* UIImageView+Extensions.swift in Sources */,
 				02A93E1B25B4C8B200CADABF /* ViewController.swift in Sources */,
 				02A2B87D25BF1A6E00A4AD28 /* InputDataViewModel.swift in Sources */,
 				02A93E1725B4C8B200CADABF /* AppDelegate.swift in Sources */,
 				02ABA5EF25E3991500331248 /* APIService.swift in Sources */,
 				024ACE6425B5253A009F30B2 /* DICOMMetadataViewController.swift in Sources */,
+				02352B7D2610331200F50C99 /* LoginViewModel.swift in Sources */,
 				02A93E1925B4C8B200CADABF /* SceneDelegate.swift in Sources */,
+				02352B872610397500F50C99 /* SignupViewModel.swift in Sources */,
 				027EE49425FC610300BAF8F2 /* Bindable.swift in Sources */,
+				02C2641A2606B34B000183BA /* StudiesListViewModel.swift in Sources */,
 				027EE4D52605170500BAF8F2 /* StudiesTableViewCell.swift in Sources */,
+				02352B732610327600F50C99 /* LoginViewController.swift in Sources */,
 				027EE49E25FC65C200BAF8F2 /* Date+Extensions.swift in Sources */,
+				02352B82261034D900F50C99 /* LoginRequestModel.swift in Sources */,
 				02A93E4D25B4F54800CADABF /* ImagePicker.swift in Sources */,
+				02352B8C261039BF00F50C99 /* SignupRequestModel.swift in Sources */,
 				027EE49925FC635100BAF8F2 /* String+Extensions.swift in Sources */,
 				02A93E4F25B4FBD300CADABF /* ImageFragmentCollectionViewCell.swift in Sources */,
 				027EE4AC2604425200BAF8F2 /* StudiesModel.swift in Sources */,
 				02ABA5DF25E3774600331248 /* SCImage.swift in Sources */,
 				027EE47F25F8769300BAF8F2 /* DataProgressViewController.swift in Sources */,
 				02A2B88225BF228900A4AD28 /* Coordinator.swift in Sources */,
+				02C2642C26072424000183BA /* StudiesDetailViewController.swift in Sources */,
+				02352B782610329100F50C99 /* SignupViewController.swift in Sources */,
 				027EE4A625FDE55700BAF8F2 /* Encodable+Extensions.swift in Sources */,
 				027EE4C6260512A300BAF8F2 /* StudiesListViewController.swift in Sources */,
 			);

@@ -15,12 +15,12 @@ import Foundation
 
 import Foundation
 
-struct StudiesModel {
+struct StudiesModel: Codable {
     
     // MARK: - Patient
     struct Patient: Codable {
-        let patientID, patientName, patientSex, patientsBirthDate: String
-        let studies: [Study]
+        let patientID, patientName, patientSex, patientsBirthDate: String?
+        let studies: [Study]?
 
         enum CodingKeys: String, CodingKey {
             case patientID = "patient_id"
@@ -33,9 +33,9 @@ struct StudiesModel {
 
     // MARK: - Study
     struct Study: Codable {
-        let accessionNumber, referringPhysician: String
-        let series: [Series]
-        let studyDate, studyID, studyInstanceUID, studyTime: String
+        let accessionNumber, referringPhysician: String?
+        let series: [Series]?
+        let studyDate, studyID, studyInstanceUID, studyTime: String?
 
         enum CodingKeys: String, CodingKey {
             case accessionNumber = "accession_number"
@@ -50,8 +50,8 @@ struct StudiesModel {
 
     // MARK: - Series
     struct Series: Codable {
-        let files: [File]
-        let modality, seriesInstanceUID, seriesNumber, studyID: String
+        let files: [File]?
+        let modality, seriesInstanceUID, seriesNumber, studyID: String?
 
         enum CodingKeys: String, CodingKey {
             case files = "files"
@@ -64,9 +64,9 @@ struct StudiesModel {
 
     // MARK: - File
     struct File: Codable {
-        let dcmURL: String
-        let imageURL: String
-        let sopInstanceUID: String
+        let dcmURL: String?
+        let imageURL: String?
+        let sopInstanceUID: String?
 
         enum CodingKeys: String, CodingKey {
             case dcmURL = "dcm_url"

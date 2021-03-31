@@ -52,7 +52,9 @@ class DataProgressViewController: UIViewController {
             case .success:
                 self.getUploadCompleted()
             case .error:
-                self.alert(withTitle: "Erro", message: "Ocorreu um erro, tente novamente.")
+                self.alert(withTitle: "Erro", message: "ocorreu um erro, tente novamente") { _ in
+                    self.navigationController?.popToRootViewController(animated: true)
+                }
             case .none:
                 print("initial state")
             }

@@ -69,4 +69,16 @@ class APIService {
 
     }
     
+    func fetchStudies(onSuccess: @escaping ([StudiesModel.Patient]) -> (), onError: @escaping (AFError) -> ()) {
+        AF.request(urlString).responseJSON { response in
+            switch response.result {
+            case .success:
+                let json = try? JSONDecoder().decode([StudiesModel.Patient].self, from: response.data!)
+                onSuccess(json!)
+            case .failure(let error):
+                onError(error)
+            }
+        }
+    }
+    
 }

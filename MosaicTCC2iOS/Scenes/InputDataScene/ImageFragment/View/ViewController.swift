@@ -11,6 +11,12 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var imageFragmentsCollectionView: UICollectionView!
+    @IBOutlet weak var descriptionScreenLabel: UILabel! {
+        didSet {
+            descriptionScreenLabel.attributedText = NSMutableAttributedString().normal("Importar Fragmentos\n", font: .boldSystemFont(ofSize: 26), color: .gray).normal("Importe os fragmentos de imagem para gerar a composição do campo visual.", font: .boldSystemFont(ofSize: 16), color: .gray)
+        }
+    }
+    @IBOutlet weak var nextButton: UIButton!
     
     private var imagePicker: ImagePicker?
     private var imageFragments = [UIImage(), UIImage(), UIImage(), UIImage(), UIImage(), UIImage(), UIImage(), UIImage(), UIImage()]
@@ -35,19 +41,8 @@ class ViewController: UIViewController {
         let viewController = DICOMMetadataViewController()
         viewController.images = imageFragments
         self.navigationController?.pushViewController(viewController, animated: true)
-//        viewModel.getTest()
     }
-    
-//    private func createSCImageData() -> SCImage {
-////        let fileMeta = FileMeta()
-//        let patient = Patient()
-//        let generalStudy = GeneralStudy()
-//        let generalSeries = GeneralSeries()
-//        let scEquipament = SCEquipament()
-//        let generalImage = GeneralImage()
-//        let scImage = SCImage(Patient: patient, GeneralStudy: generalStudy, GeneralSeries: generalSeries, SCEquipament: scEquipament, GeneralImage: generalImage)
-//        return scImage
-//    }
+
 }
 
 extension ViewController: UICollectionViewDataSource {
@@ -74,7 +69,7 @@ extension ViewController: UICollectionViewDataSource {
 extension ViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.imagePicker?.present(from: self.view, forIndexPath: indexPath)
+        self.imagePicker?.present(from: nextButton, forIndexPath: indexPath)
     }
 }
 
@@ -87,5 +82,19 @@ extension ViewController: ImagePickerDelegate {
         }
     }
     
+}
+
+extension NSMutableAttributedString {
+    
+    @discardableResult func normal(_ text: String, font: UIFont? = UIFont.systemFont(ofSize: 12.0), color: UIColor? = nil, linkUrl: String? = nil) -> NSMutableAttributedString {
+        var attrs: [NSAttributedString.Key: Any] = [.font: font!]
+        if let url = linkUrl { attrs[.link] = url }
+        if let colorText = color { attrs[.foregroundColor] = colorText }
+        let normal = NSMutableAttributedString(string:text, attributes: attrs)
+        
+        append(normal)
+        
+        return self
+    }
 }
 

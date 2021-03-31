@@ -32,9 +32,7 @@ class DICOMMetadataViewController: FormViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        scImageData = createSCImageData()
-        
+                
         form
     
         +++ Section("Dados do Paciente")
@@ -45,15 +43,20 @@ class DICOMMetadataViewController: FormViewController {
                 row.tag = "patientName"
                 row.cell.textField.keyboardType = .asciiCapable
                 row.cell.textField.autocapitalizationType = .words
+                row.add(rule: RuleRequired())
 //                row.value = "Patient Test"
             }.onChange({ row in
                 self.dicomDataModel.patientName = row.value?.dicomizeName()
+            }).cellUpdate({ (cell, row) in
+                if !row.isValid {
+                    cell.titleLabel?.textColor = .systemRed
+                }
             })
 
             <<< DateRow(){
                 $0.title = "Data de nascimento"
                 $0.tag = "patientBirthDate"
-//                $0.value = Date()
+                $0.add(rule: RuleRequired())
             }.onChange({ row in
                 self.dicomDataModel.patientBirthDate = row.value?.convertToStringFromFormat("yyyyMMdd")
             })
@@ -62,6 +65,7 @@ class DICOMMetadataViewController: FormViewController {
                 $0.title = "Sexo"
                 $0.tag = "patientSex"
                 $0.options = ["Masculino", "Feminino"]
+                $0.add(rule: RuleRequired())
             }.onChange({ row in
                 let patientSex = row.value == "Masculino" ? PatientSexOption.male : PatientSexOption.female
                 self.dicomDataModel.patientSex = patientSex.rawValue
@@ -74,9 +78,14 @@ class DICOMMetadataViewController: FormViewController {
                 row.placeholder = "Insira o nome aqui"
                 row.cell.textField.keyboardType = .asciiCapable
                 row.cell.textField.autocapitalizationType = .words
+                row.add(rule: RuleRequired())
             }.onChange({ row in
                 self.dicomDataModel.studyID = row.value?.dicomizeName()
 
+            }).cellUpdate({ cell, row in
+                if !row.isValid {
+                    cell.titleLabel?.textColor = .systemRed
+                }
             })
             
             <<< TextRow(){ row in
@@ -85,43 +94,42 @@ class DICOMMetadataViewController: FormViewController {
                 row.tag = "referringPhysicianName"
                 row.cell.textField.keyboardType = .asciiCapable
                 row.cell.textField.autocapitalizationType = .words
+                row.add(rule: RuleRequired())
             }.onChange({ row in
                 self.dicomDataModel.referringPhysicianName = row.value?.dicomizeName()
+            }).cellUpdate({ cell, row in
+                if !row.isValid {
+                    cell.titleLabel?.textColor = .systemRed
+                }
             })
 
         +++ Section()
             <<< ButtonRow() { row in
                 row.title = "Enviar"
+                row.disabled = Condition.function(form.allRows.compactMap { $0.tag },
+                                                  { !$0.validate().isEmpty })
+//                row.hidden = Condition.function(form.allRows.compactMap { $0.tag },
+//                                                { !$0.validate().isEmpty })
+                row.evaluateDisabled()
+//                row.evaluateHidden()
             }.onCellSelection({  [weak self] cell, row in
-                self?.test()
+                if !row.isDisabled {
+                    self?.test()
+                }
+                
             }).cellSetup({ cell, row in
                 cell.backgroundColor = .gray
                 cell.tintColor = .white
             })
     }
-    
-    private func createSCImageData() -> SCImage {
-        let patient = Patient()
-        let generalStudy = GeneralStudy()
-        let generalSeries = GeneralSeries()
-        let scEquipament = SCEquipament()
-        let generalImage = GeneralImage()
-        let scImage = SCImage(patient: patient,
-                              generalStudy: generalStudy,
-                              generalSeries: generalSeries,
-                              scEquipament: scEquipament,
-                              generalImage: generalImage)
-        return scImage
-    }
+
     
     func test() {
         print(dicomDataModel)
         let viewController = UIStoryboard(name: "DICOMMetadata", bundle: nil).instantiateViewController(identifier: "DataProgressViewController") as DataProgressViewController
         viewController.setDataToRequest(images: images, scImage: scImageData)
-//        guard let dicomData = self.dicomDataModel else { return }
         viewController.setDataToRequest(images: images, dicomData: self.dicomDataModel)
         self.navigationController?.pushViewController(viewController, animated: true)
-//        self.present(viewController, animated: true, completion: nil)
     }
 
 }
